@@ -34,9 +34,6 @@ public class FlowDownL extends TypedAtomicActor {
 	protected Time[] northheaderTime =  new Time[P_levels];
 	protected Time[] nextEheaderTime =  new Time[P_levels];
 	protected Time[] nextNheaderTime =  new Time[P_levels];
-	
-	
-	
 	public int until;
 		
 	protected TypedIOPort outputDataE;
@@ -111,6 +108,7 @@ public class FlowDownL extends TypedAtomicActor {
 		for (int i = 0; i < 6; i++) {
 			types[i] = BaseType.INT;
 		}
+		// initialise
 		for (int i = 0; i < P_levels; i++) {
 			for(int j = 0; j < 2; j++) {
 				currentheaderI[i][j] = 0;
@@ -206,6 +204,7 @@ public class FlowDownL extends TypedAtomicActor {
                 "_cardinal");
 	    _inject2Cardinal.setExpression("SOUTH");
         /*--------------------------------------------------------------*/
+		
         outputDataE.setTypeEquals(Type1);       
         inputDataE.setTypeEquals(Type1); 
 
@@ -246,9 +245,6 @@ public class FlowDownL extends TypedAtomicActor {
 		/*---algorithm to decide which values get priority to go out first----*/
 			outselect();
 			enablesend = 1;
-			
-			
-		/*------------------------------------------------------------------*/	
 		}
 		else {
 			enablesend = 0;
@@ -438,7 +434,7 @@ public class FlowDownL extends TypedAtomicActor {
 			creditsN[type-1] += 1;
 		}		
 	}
-
+	//flit forwarding
 	public void output(int direction, int priority, String buffer) throws IllegalActionException {
 		
 		int loc = (priority - 1);
@@ -537,7 +533,7 @@ public class FlowDownL extends TypedAtomicActor {
 
 		}
 	}
-
+	//flit selection
 	public void outselect() throws IllegalActionException {
 								//	 direction = 0, direction = 1, direction = CURRENT;
 								// { {bestE,bestN,bestI}, {bestE,bestN,bestI}, {bestE,bestN,bestI} } 
@@ -601,7 +597,7 @@ public class FlowDownL extends TypedAtomicActor {
 					}
 				}
 			}
-			//find highest priority in south buffer
+			
 			
 		}
 		//System.out.println(Arrays.deepToString(_t));
