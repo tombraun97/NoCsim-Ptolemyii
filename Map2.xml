@@ -1,0 +1,731 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE entity PUBLIC "-//UC Berkeley//DTD MoML 1//EN"
+    "http://ptolemy.eecs.berkeley.edu/xml/dtd/MoML_1.dtd">
+<entity name="Map2" class="ptolemy.actor.TypedCompositeActor">
+    <property name="_createdBy" class="ptolemy.kernel.attributes.VersionAttribute" value="6.0.2">
+    </property>
+    <property name="DE Director" class="ptolemy.domains.de.kernel.DEDirector">
+        <property name="stopTime" class="ptolemy.data.expr.Parameter" value="300">
+        </property>
+        <property name="stopWhenQueueIsEmpty" class="ptolemy.data.expr.Parameter" value="true">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[20.0, -20.0]">
+        </property>
+    </property>
+    <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={533, 154, 929, 798}, maximized=false}">
+    </property>
+    <property name="_vergilSize" class="ptolemy.actor.gui.SizeAttribute" value="[706, 681]">
+    </property>
+    <property name="_vergilZoomFactor" class="ptolemy.data.expr.ExpertParameter" value="1.0">
+    </property>
+    <property name="_vergilCenter" class="ptolemy.data.expr.ExpertParameter" value="{362.040404040404, 124.1848169191919}">
+    </property>
+    <entity name="My_Sink" class="myactors.My_Sink">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[-40.0, 95.0]">
+        </property>
+    </entity>
+    <entity name="My_Sink2" class="myactors.My_Sink">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[640.0, 70.0]">
+        </property>
+    </entity>
+    <entity name="My_Sink3" class="myactors.My_Sink">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[35.0, 445.0]">
+        </property>
+    </entity>
+    <entity name="My_Sink4" class="myactors.My_Sink">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[640.0, 495.0]">
+        </property>
+    </entity>
+    <entity name="FlowTopL" class="myactors.FlowTopL">
+        <property name="Ycoord" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[155.0, 110.0]">
+        </property>
+    </entity>
+    <entity name="FlowTopR" class="myactors.FlowTopR">
+        <property name="Xcoord" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="Ycoord" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[495.0, 110.0]">
+        </property>
+    </entity>
+    <entity name="FlowDownR" class="myactors.FlowDownR">
+        <property name="Xcoord" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[495.0, 390.0]">
+        </property>
+    </entity>
+    <entity name="FlowDownL" class="myactors.FlowDownL">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[155.0, 390.0]">
+        </property>
+    </entity>
+    <entity name="FlowTopMid" class="myactors.FlowTopMid">
+        <property name="Xcoord" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <property name="Ycoord" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[315.0, 110.0]">
+        </property>
+    </entity>
+    <entity name="FlowDownMid" class="myactors.FlowDownMid">
+        <property name="Xcoord" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[320.0, 390.0]">
+        </property>
+    </entity>
+    <entity name="FlowMid" class="myactors.FlowMid">
+        <property name="Xcoord" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <property name="Ycoord" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[315.0, 235.0]">
+        </property>
+    </entity>
+    <entity name="FlowRightMid" class="myactors.FlowRightMid">
+        <property name="Xcoord" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="Ycoord" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[495.0, 235.0]">
+        </property>
+    </entity>
+    <entity name="FlowLeftMid" class="myactors.FlowLeftMid">
+        <property name="Ycoord" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[155.0, 235.0]">
+        </property>
+    </entity>
+    <entity name="My_Sink5" class="myactors.My_Sink">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[730.0, 165.0]">
+        </property>
+    </entity>
+    <entity name="My_Sink6" class="myactors.My_Sink">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[245.0, 10.0]">
+        </property>
+    </entity>
+    <entity name="My_Sink7" class="myactors.My_Sink">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[-25.0, 190.0]">
+        </property>
+    </entity>
+    <entity name="My_Sink8" class="myactors.My_Sink">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[410.0, 450.0]">
+        </property>
+    </entity>
+    <entity name="My_Sink9" class="myactors.My_Sink">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[240.0, 455.0]">
+        </property>
+    </entity>
+    <entity name="TaskTest" class="myactors.TaskTest">
+        <property name="taskid" class="ptolemy.data.expr.Parameter" value="0">
+        </property>
+        <property name="Xdes" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <property name="Ydes" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="data" class="ptolemy.data.expr.Parameter" value="0">
+        </property>
+        <property name="priority" class="ptolemy.data.expr.Parameter" value="9">
+        </property>
+        <property name="flits" class="ptolemy.data.expr.Parameter" value="33">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[145.0, 535.0]">
+        </property>
+    </entity>
+    <entity name="TaskTest2" class="myactors.TaskTest">
+        <property name="taskid" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <property name="Xdes" class="ptolemy.data.expr.Parameter" value="0">
+        </property>
+        <property name="Ydes" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="data" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <property name="priority" class="ptolemy.data.expr.Parameter" value="7">
+        </property>
+        <property name="flits" class="ptolemy.data.expr.Parameter" value="21">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[315.0, 535.0]">
+        </property>
+    </entity>
+    <entity name="TaskTest3" class="myactors.TaskTest">
+        <property name="taskid" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="Xdes" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <property name="Ydes" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="data" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="priority" class="ptolemy.data.expr.Parameter" value="6">
+        </property>
+        <property name="flits" class="ptolemy.data.expr.Parameter" value="11">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[495.0, 535.0]">
+        </property>
+    </entity>
+    <entity name="TaskTest4" class="myactors.TaskTest">
+        <property name="taskid" class="ptolemy.data.expr.Parameter" value="3">
+        </property>
+        <property name="Xdes" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="Ydes" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="data" class="ptolemy.data.expr.Parameter" value="3">
+        </property>
+        <property name="priority" class="ptolemy.data.expr.Parameter" value="5">
+        </property>
+        <property name="flits" class="ptolemy.data.expr.Parameter" value="14">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[40.0, 280.0]">
+        </property>
+    </entity>
+    <entity name="TaskTest5" class="myactors.TaskTest">
+        <property name="taskid" class="ptolemy.data.expr.Parameter" value="4">
+        </property>
+        <property name="Xdes" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="Ydes" class="ptolemy.data.expr.Parameter" value="0">
+        </property>
+        <property name="data" class="ptolemy.data.expr.Parameter" value="4">
+        </property>
+        <property name="priority" class="ptolemy.data.expr.Parameter" value="3">
+        </property>
+        <property name="flits" class="ptolemy.data.expr.Parameter" value="28">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[405.0, 305.0]">
+        </property>
+    </entity>
+    <entity name="TaskTest6" class="myactors.TaskTest">
+        <property name="taskid" class="ptolemy.data.expr.Parameter" value="5">
+        </property>
+        <property name="Xdes" class="ptolemy.data.expr.Parameter" value="0">
+        </property>
+        <property name="Ydes" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="data" class="ptolemy.data.expr.Parameter" value="5">
+        </property>
+        <property name="priority" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="flits" class="ptolemy.data.expr.Parameter" value="39">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[575.0, 285.0]">
+        </property>
+    </entity>
+    <entity name="TaskTest7" class="myactors.TaskTest">
+        <property name="taskid" class="ptolemy.data.expr.Parameter" value="6">
+        </property>
+        <property name="Xdes" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="Ydes" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="data" class="ptolemy.data.expr.Parameter" value="6">
+        </property>
+        <property name="priority" class="ptolemy.data.expr.Parameter" value="8">
+        </property>
+        <property name="flits" class="ptolemy.data.expr.Parameter" value="45">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[145.0, 30.0]">
+        </property>
+    </entity>
+    <entity name="TaskTest8" class="myactors.TaskTest">
+        <property name="taskid" class="ptolemy.data.expr.Parameter" value="7">
+        </property>
+        <property name="Xdes" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="Ydes" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="data" class="ptolemy.data.expr.Parameter" value="7">
+        </property>
+        <property name="priority" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <property name="flits" class="ptolemy.data.expr.Parameter" value="17">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[350.0, 20.0]">
+        </property>
+    </entity>
+    <entity name="TaskTest9" class="myactors.TaskTest">
+        <property name="taskid" class="ptolemy.data.expr.Parameter" value="8">
+        </property>
+        <property name="Xdes" class="ptolemy.data.expr.Parameter" value="0">
+        </property>
+        <property name="Ydes" class="ptolemy.data.expr.Parameter" value="2">
+        </property>
+        <property name="data" class="ptolemy.data.expr.Parameter" value="8">
+        </property>
+        <property name="priority" class="ptolemy.data.expr.Parameter" value="4">
+        </property>
+        <property name="flits" class="ptolemy.data.expr.Parameter" value="9">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="[495.0, 20.0]">
+        </property>
+    </entity>
+    <relation name="relation2" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <vertex name="vertex1" value="[-5.0, 65.0]">
+        </vertex>
+    </relation>
+    <relation name="relation15" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <vertex name="vertex1" value="[575.0, 110.0]">
+        </vertex>
+    </relation>
+    <relation name="relation20" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <vertex name="vertex1" value="[10.0, 475.0]">
+        </vertex>
+    </relation>
+    <relation name="relation28" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <vertex name="vertex1" value="[580.0, 440.0]">
+        </vertex>
+    </relation>
+    <relation name="relation14" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation17" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation18" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation19" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation29" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation30" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation31" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation32" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation6" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation7" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation8" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation9" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation33" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation34" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation35" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation36" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation37" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation38" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation39" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation40" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation41" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation42" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation43" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation44" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation3" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation4" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation5" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation10" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation11" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation12" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation13" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation16" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation45" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation46" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation47" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation48" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation49" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation50" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation51" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation52" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation53" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation54" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation55" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation56" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation57" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation58" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation59" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation60" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation71" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <vertex name="vertex1" value="[570.0, 205.0]">
+        </vertex>
+    </relation>
+    <relation name="relation72" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <vertex name="vertex1" value="[405.0, 345.0]">
+        </vertex>
+    </relation>
+    <relation name="relation73" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <vertex name="vertex1" value="[-70.0, 225.0]">
+        </vertex>
+    </relation>
+    <relation name="relation74" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <vertex name="vertex1" value="[240.0, -25.0]">
+        </vertex>
+    </relation>
+    <relation name="relation75" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+        <vertex name="vertex1" value="[300.0, 445.0]">
+        </vertex>
+    </relation>
+    <relation name="relation26" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation27" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation21" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation22" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation23" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation24" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation25" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation61" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation62" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation63" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation64" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation65" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation66" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation67" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation68" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation69" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="relation70" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <link port="My_Sink.flitsIN" relation="relation2"/>
+    <link port="My_Sink2.flitsIN" relation="relation15"/>
+    <link port="My_Sink3.flitsIN" relation="relation20"/>
+    <link port="My_Sink4.flitsIN" relation="relation28"/>
+    <link port="FlowTopL.OutputDataEast" relation="relation33"/>
+    <link port="FlowTopL.OutputCredEast" relation="relation34"/>
+    <link port="FlowTopL.InputDataEast" relation="relation35"/>
+    <link port="FlowTopL.InputCredEast" relation="relation36"/>
+    <link port="FlowTopL.OutputDataSouth" relation="relation4"/>
+    <link port="FlowTopL.OutputCredSouth" relation="relation3"/>
+    <link port="FlowTopL.InputDataSouth" relation="relation5"/>
+    <link port="FlowTopL.InputCredSouth" relation="relation10"/>
+    <link port="FlowTopL.Debug" relation="relation2"/>
+    <link port="FlowTopL.injectport" relation="relation65"/>
+    <link port="FlowTopL.injectcredits" relation="relation66"/>
+    <link port="FlowTopR.InputDataWest" relation="relation6"/>
+    <link port="FlowTopR.InputCredWest" relation="relation7"/>
+    <link port="FlowTopR.OutputDataWest" relation="relation8"/>
+    <link port="FlowTopR.OutputCredWest" relation="relation9"/>
+    <link port="FlowTopR.OutputDataSouth" relation="relation45"/>
+    <link port="FlowTopR.OutputCredSouth" relation="relation46"/>
+    <link port="FlowTopR.InputDataSouth" relation="relation47"/>
+    <link port="FlowTopR.InputCredSouth" relation="relation48"/>
+    <link port="FlowTopR.Debug" relation="relation15"/>
+    <link port="FlowTopR.injectport" relation="relation69"/>
+    <link port="FlowTopR.injectcredits" relation="relation70"/>
+    <link port="FlowDownR.InputDataWest" relation="relation14"/>
+    <link port="FlowDownR.InputCredWest" relation="relation17"/>
+    <link port="FlowDownR.OutputDataWest" relation="relation18"/>
+    <link port="FlowDownR.OutputCredWest" relation="relation19"/>
+    <link port="FlowDownR.InputDataNorth" relation="relation49"/>
+    <link port="FlowDownR.InputCredNorth" relation="relation50"/>
+    <link port="FlowDownR.OutputDataNorth" relation="relation52"/>
+    <link port="FlowDownR.OutputCredNorth" relation="relation51"/>
+    <link port="FlowDownR.Debug" relation="relation28"/>
+    <link port="FlowDownR.injectport" relation="relation22"/>
+    <link port="FlowDownR.injectcredits" relation="relation23"/>
+    <link port="FlowDownL.OutputDataEast" relation="relation31"/>
+    <link port="FlowDownL.OutputCredEast" relation="relation32"/>
+    <link port="FlowDownL.InputDataEast" relation="relation29"/>
+    <link port="FlowDownL.InputCredEast" relation="relation30"/>
+    <link port="FlowDownL.InputDataNorth" relation="relation11"/>
+    <link port="FlowDownL.InputCredNorth" relation="relation12"/>
+    <link port="FlowDownL.OutputDataNorth" relation="relation16"/>
+    <link port="FlowDownL.OutputCredNorth" relation="relation13"/>
+    <link port="FlowDownL.Debug" relation="relation20"/>
+    <link port="FlowDownL.injectport" relation="relation26"/>
+    <link port="FlowDownL.injectcredits" relation="relation27"/>
+    <link port="FlowTopMid.OutputDataEast" relation="relation6"/>
+    <link port="FlowTopMid.OutputCredEast" relation="relation7"/>
+    <link port="FlowTopMid.InputDataEast" relation="relation8"/>
+    <link port="FlowTopMid.InputCredEast" relation="relation9"/>
+    <link port="FlowTopMid.OutputDataSouth" relation="relation38"/>
+    <link port="FlowTopMid.OutputCredSouth" relation="relation37"/>
+    <link port="FlowTopMid.InputDataSouth" relation="relation40"/>
+    <link port="FlowTopMid.InputCredSouth" relation="relation39"/>
+    <link port="FlowTopMid.InputDataWest" relation="relation33"/>
+    <link port="FlowTopMid.InputCredWest" relation="relation34"/>
+    <link port="FlowTopMid.OutputDataWest" relation="relation35"/>
+    <link port="FlowTopMid.OutputCredWest" relation="relation36"/>
+    <link port="FlowTopMid.Debug" relation="relation74"/>
+    <link port="FlowTopMid.injectport" relation="relation67"/>
+    <link port="FlowTopMid.injectcredits" relation="relation68"/>
+    <link port="FlowDownMid.OutputDataEast" relation="relation14"/>
+    <link port="FlowDownMid.OutputCredEast" relation="relation17"/>
+    <link port="FlowDownMid.InputDataEast" relation="relation18"/>
+    <link port="FlowDownMid.InputCredEast" relation="relation19"/>
+    <link port="FlowDownMid.OutputDataNorth" relation="relation41"/>
+    <link port="FlowDownMid.OutputCredNorth" relation="relation42"/>
+    <link port="FlowDownMid.InputDataNorth" relation="relation44"/>
+    <link port="FlowDownMid.InputCredNorth" relation="relation43"/>
+    <link port="FlowDownMid.InputDataWest" relation="relation31"/>
+    <link port="FlowDownMid.InputCredWest" relation="relation32"/>
+    <link port="FlowDownMid.OutputDataWest" relation="relation29"/>
+    <link port="FlowDownMid.OutputCredWest" relation="relation30"/>
+    <link port="FlowDownMid.Debug" relation="relation75"/>
+    <link port="FlowDownMid.injectport" relation="relation"/>
+    <link port="FlowDownMid.injectcredits" relation="relation21"/>
+    <link port="FlowMid.OutputDataEast" relation="relation57"/>
+    <link port="FlowMid.OutputCredEast" relation="relation58"/>
+    <link port="FlowMid.InputDataEast" relation="relation59"/>
+    <link port="FlowMid.InputCredEast" relation="relation60"/>
+    <link port="FlowMid.InputDataNorth" relation="relation38"/>
+    <link port="FlowMid.InputCredNorth" relation="relation37"/>
+    <link port="FlowMid.OutputDataNorth" relation="relation40"/>
+    <link port="FlowMid.OutputCredNorth" relation="relation39"/>
+    <link port="FlowMid.InputDataSouth" relation="relation41"/>
+    <link port="FlowMid.InputCredSouth" relation="relation42"/>
+    <link port="FlowMid.OutputDataSouth" relation="relation44"/>
+    <link port="FlowMid.OutputCredSouth" relation="relation43"/>
+    <link port="FlowMid.InputDataWest" relation="relation53"/>
+    <link port="FlowMid.InputCredWest" relation="relation54"/>
+    <link port="FlowMid.OutputDataWest" relation="relation55"/>
+    <link port="FlowMid.OutputCredWest" relation="relation56"/>
+    <link port="FlowMid.Debug" relation="relation72"/>
+    <link port="FlowMid.injectport" relation="relation61"/>
+    <link port="FlowMid.injectcredits" relation="relation62"/>
+    <link port="FlowRightMid.InputDataNorth" relation="relation45"/>
+    <link port="FlowRightMid.InputCredNorth" relation="relation46"/>
+    <link port="FlowRightMid.OutputDataNorth" relation="relation47"/>
+    <link port="FlowRightMid.OutputCredNorth" relation="relation48"/>
+    <link port="FlowRightMid.OutputDataSouth" relation="relation49"/>
+    <link port="FlowRightMid.OutputCredSouth" relation="relation50"/>
+    <link port="FlowRightMid.InputDataSouth" relation="relation52"/>
+    <link port="FlowRightMid.InputCredSouth" relation="relation51"/>
+    <link port="FlowRightMid.InputDataWest" relation="relation57"/>
+    <link port="FlowRightMid.InputCredWest" relation="relation58"/>
+    <link port="FlowRightMid.OutputDataWest" relation="relation59"/>
+    <link port="FlowRightMid.OutputCredWest" relation="relation60"/>
+    <link port="FlowRightMid.Debug" relation="relation71"/>
+    <link port="FlowRightMid.injectport" relation="relation63"/>
+    <link port="FlowRightMid.injectcredits" relation="relation64"/>
+    <link port="FlowLeftMid.OutputDataEast" relation="relation53"/>
+    <link port="FlowLeftMid.OutputCredEast" relation="relation54"/>
+    <link port="FlowLeftMid.InputDataEast" relation="relation55"/>
+    <link port="FlowLeftMid.InputCredEast" relation="relation56"/>
+    <link port="FlowLeftMid.InputDataNorth" relation="relation4"/>
+    <link port="FlowLeftMid.InputCredNorth" relation="relation3"/>
+    <link port="FlowLeftMid.OutputDataNorth" relation="relation5"/>
+    <link port="FlowLeftMid.OutputCredNorth" relation="relation10"/>
+    <link port="FlowLeftMid.OutputDataSouth" relation="relation11"/>
+    <link port="FlowLeftMid.OutputCredSouth" relation="relation12"/>
+    <link port="FlowLeftMid.InputDataSouth" relation="relation16"/>
+    <link port="FlowLeftMid.InputCredSouth" relation="relation13"/>
+    <link port="FlowLeftMid.Debug" relation="relation73"/>
+    <link port="FlowLeftMid.injectport" relation="relation24"/>
+    <link port="FlowLeftMid.injectcredits" relation="relation25"/>
+    <link port="My_Sink5.flitsIN" relation="relation71"/>
+    <link port="My_Sink6.flitsIN" relation="relation74"/>
+    <link port="My_Sink7.flitsIN" relation="relation73"/>
+    <link port="My_Sink8.flitsIN" relation="relation72"/>
+    <link port="My_Sink9.flitsIN" relation="relation75"/>
+    <link port="TaskTest.OutputTask" relation="relation26"/>
+    <link port="TaskTest.InputCredits" relation="relation27"/>
+    <link port="TaskTest2.OutputTask" relation="relation"/>
+    <link port="TaskTest2.InputCredits" relation="relation21"/>
+    <link port="TaskTest3.OutputTask" relation="relation22"/>
+    <link port="TaskTest3.InputCredits" relation="relation23"/>
+    <link port="TaskTest4.OutputTask" relation="relation24"/>
+    <link port="TaskTest4.InputCredits" relation="relation25"/>
+    <link port="TaskTest5.OutputTask" relation="relation61"/>
+    <link port="TaskTest5.InputCredits" relation="relation62"/>
+    <link port="TaskTest6.OutputTask" relation="relation63"/>
+    <link port="TaskTest6.InputCredits" relation="relation64"/>
+    <link port="TaskTest7.OutputTask" relation="relation65"/>
+    <link port="TaskTest7.InputCredits" relation="relation66"/>
+    <link port="TaskTest8.OutputTask" relation="relation67"/>
+    <link port="TaskTest8.InputCredits" relation="relation68"/>
+    <link port="TaskTest9.OutputTask" relation="relation69"/>
+    <link port="TaskTest9.InputCredits" relation="relation70"/>
+</entity>
